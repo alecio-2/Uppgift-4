@@ -1,0 +1,635 @@
+/* Allmänna stilar /
+/ Använder box-sizing för att räkna med padding och border i elementets storlek /
+/ Nollställer marginaler och padding för alla element */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Stilar för hela sidan */
+body {
+  font-family: Verdana, Georgia, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #e9e9e9;
+}
+
+/* Stilar för bilder /
+/ Sätter maximal bredd på bilder så att de anpassas till förälderelementets bredd /
+/ Höjden sätts automatiskt för att behålla proportionerna */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Stilar för länkar /
+/ Tar bort standardunderstrykning på länkar /
+/ Sätter färg på länkar */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Stilar för listor /
+/ Tar bort standardlist-stilen */
+ul {
+  list-style: none;
+}
+
+/* Banner section styles /
+/ Bakgrundsfärg och textfärg för banner /
+/ Lägger till padding på banner /
+/ Centrerar innehåll i banner */
+.banner {
+  background-color: #04648a;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Stilar för banner-rubrik */
+.banner h1 {
+  font-size: 2.5rem;
+}
+
+/* Länkfärg för banner */
+.banner a {
+  color: #fff;
+  /* Standard länkfärg */
+  text-decoration: none;
+  /* Understrykning av länkar */
+}
+
+/* Navigation menu styles /
+/ Bakgrundsfärg för menyn /
+/ Centrerar menyn */
+.menu {
+  background-color: #027eaf;
+  display: flex;
+  justify-content: center;
+}
+
+/* Stilar för menyns lista /
+/ Tar bort standardlist-stilen /
+/ Tar bort marginaler och padding för listan /
+/ Gör listan till en flexcontainer /
+/ Radbryter element om de inte får plats i bredd */
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Stilar för menyns listelement /
+/ Visar elementen bredvid varandra */
+.menu li {
+  display: inline-block;
+}
+
+/* Stilar för länkarna i menyn /
+/ Lägger till marginal och padding /
+/ Gör länkarna till blockelement /
+/ Tar bort understreckning på hover /
+/ Sätter övergångseffekt vid hover */
+.menu a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Stilar för hover på länkarna /
+/ Byter bakgrundsfärg vid hover */
+.menu a:hover {
+  background-color: #01243a;
+}
+
+/* Stilar för main-rubrik /
+/ Sätter maxbredden för huvudinnehållet på 960px /
+/ Centrerar huvudinnehållet genom att använda auto-margin för översta och understa marginalen /
+/ Lägger till padding på huvudinnehållet för att ge utrymme runt innehållet /
+/ Sätter bakgrundsfärg på huvudinnehållet */
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+/* Stilar för huvudrubrik /
+/ Sätter fontstorleken på h2 till 2rem /
+/ Lägger till nedre marginal på 1rem på huvudrubrik */
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Stilar för text i huvudinnehåll /
+/ Lägger till nedre marginal på 1rem på text i huvudinnehåll */
+main p {
+  margin-bottom: 1rem;
+}
+
+/* Stilar för tutorials-sektionen /
+/ Lägger till övre marginal på 1rem på tutorials-sektionen */
+.tutorials {
+  margin-top: 1rem;
+}
+
+/* Stilar för bilder i tutorials-sektionen /
+/ Sätter bilden till höger sida genom att använda float: right /
+/ Lägger till marginal till vänster om bilden /
+/ Sätter maximal bredd för bilden till 40% av förälderelementets bredd /
+/ Sätter höjden automatiskt för att behålla proportionerna */
+.tutorials img {
+  float: right;
+  margin-left: 1rem;
+  max-width: 40%;
+  height: auto;
+}
+
+
+
+/* Stilar för Nyheter-sektionen /
+/ Lägger till övre marginal på 2rem på Nyheter-sektionen */
+.nyheter {
+  margin-top: 2rem;
+}
+
+
+
+
+
+/* Stilar för bilder i Nyheter-sektionen /
+/ Sätter bilden till höger sida genom att använda float: right /
+/ Lägger till marginal till vänster om bilden /
+/ Sätter bredden till 40% av förälderelementets bredd */
+.nyheter img {
+  float: right;
+  margin-left: 1rem;
+  width: 40%;
+}
+
+
+/* Stilar för Multimedia-sektionen /
+/ Lägger till övre marginal på 2rem på Multimedia-sektionen */
+.multimedia {
+  margin-top: 2rem;
+}
+
+/* Stilar för bilder i Multimedia-sektionen /
+/ Sätter bilden till vänster sida genom att använda float: left /
+/ Lägger till marginal till höger om bilden /
+/ Sätter bredden till 40% av förälderelementets bred */
+.multimedia img {
+  float: left;
+  margin-right: 1rem;
+  width: 40%;
+}
+
+
+
+
+/* Stilar för Footer-sektionen /
+/ Bakgrundsfärg och textfärg för Footer /
+/ Lägger till padding på Footer /
+/ Centrerar innehåll i Footer */
+footer {
+  background-color: #027eaf;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Stilar för text i Footer */
+footer p {
+  margin-bottom: 1rem;
+}
+
+/* Stilar för mobil vy i Footer /
+/ Ändrar layout för navigationsmenyn för mobilskärmar */
+@media screen and (max-width: 600px) {
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Stilar för kontainer i Footer /
+/ Centrerar innehåll i kontainer */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Stilar för navigationsmenyn i Footer /
+/ Sätter marginaler på navigationsmenyn */
+.footer-nav {
+  margin: 0 1rem;
+}
+
+/* Stilar för lista i navigationsmenyn i Footer /
+/ Centrerar listan i navigationsmenyn /
+/ Tar bort list-stilen på listan /
+/ Nollställer marginaler och padding för listan */
+.footer-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Stilar för listelement i navigationsmenyn i Footer /
+/ Sätter marginaler mellan listelementen */
+.footer-nav li {
+  margin: 0 0.5rem;
+}
+
+/* Stilar för länkarna i navigationsmenyn i Footer /
+/ Sätter färg på länkarna /
+/ Tar bort understreckning på länkarna /
+/ Gör länkarna feta */
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Stilar för mobilskärmar mindre än 600px */
+@media only screen and (max-width: 600px) {
+
+  /* Stilar för navigationsmenyn */
+  .menu {
+    display: block;
+    background-color: #027eaf;
+  }
+
+  /* Stilar för lista i navigationsmenyn */
+  .menu ul {
+    padding: 0.5rem;
+  }
+
+  /* Stilar för listelement i navigationsmenyn */
+  .menu li {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Stilar för länkarna i navigationsmenyn */
+  .menu a {
+    display: block;
+    padding: 0.5rem;
+  }
+
+  /* Stilar för footernavigationsmenyn */
+  .footer-nav {
+    flex-direction: column;
+  }
+
+  /* Stilar för lista i navigationsmenyn i Footer */
+  .footer-nav ul {
+    margin-top: 1rem;
+  }
+
+}
+
+/* Stilar för profilsektionen (om mig) /
+/ Visar innehållet i flex-rader /
+/ Centrerar innehållet vertikalt /
+/ Lägger till nedre marginal på 2rem */
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Stilar för profilbild /
+/ Sätter maximal bredd på bilderna till 30% av förälderelementets bredd /
+/ Höjden sätts automatiskt för att behålla proportionerna /
+/ Lägger till högermarginal på 1rem */
+.profile img {
+  max-width: 30%;
+  height: auto;
+  margin-right: 1rem;
+}
+
+/* Stilar för beskrivning i profilsektionen /
+/ Tar upp resterande utrymme med flexbox */
+.description {
+  flex: 1;
+}
+
+/* Stilar för DIY-sektionen /
+/ Lägger till övre marginal på 2rem på DIY-sektionen /
+/ Visar innehållet i flex-rader /
+/ Centrerar innehållet vertikalt /
+/ Lägger till nedre marginal på 2rem */
+.diy {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Stilar för bilder i DIY-sektionen /
+/ Sätter bilden till vänster sida genom att använda float: left /
+/ Sätter maximal bredd på bilderna till 40% av förälderelementets bredd /
+/ Höjden sätts automatiskt för att behålla proportionerna /
+/ Lägger till högermarginal på 1rem */
+.diy img {
+  float: left;
+  max-width: 40%;
+  height: auto;
+  margin-right: 1rem;
+}
+
+
+/* Stilar för beskrivning i DIY-sektionen /
+/ Tar upp resterande utrymme med flexbox */
+.diy-description {
+  flex: 1;
+}
+
+
+/*Tutorials/
+/ Gör behållaren till en flexibel behållare och anpassar dess innehåll till mitten */
+.tutorials {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem
+}
+
+/* Ställer in bildens maximala bredd till 40 % av behållaren och skalar dess höjd proportionellt */
+.tutorials img {
+  max-width: 40%;
+  height: auto;
+  margin-right: 1rem;
+}
+
+/* Ställer in det återstående utrymmet i behållaren till handledningsbeskrivningen */
+.tutorials-description {
+  flex: 1;
+}
+
+/*Nyheter*/
+/* Gör behållaren till en flexibel behållare och anpassar dess innehåll till mitten */
+.news {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem
+}
+
+/* Ställer in bildens maximala bredd till 40 % av behållaren och skalar dess höjd proportionellt */
+.news img {
+  max-width: 40%;
+  height: auto;
+  margin-right: 1rem;
+}
+
+/* Ställer in det återstående utrymmet i behållaren till nyhetsbeskrivningen */
+.news-description {
+  flex: 1;
+}
+
+/*Media*/
+/* Gör behållaren till en flexibel behållare och anpassar dess innehåll till mitten */
+.media {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem
+}
+
+/* Ställer in bildens maximala bredd till 40 % av behållaren och skalar dess höjd proportionellt */
+.media img {
+  max-width: 40%;
+  height: auto;
+  margin-right: 1rem;
+}
+
+/* Ställer in det återstående utrymmet i behållaren till mediabeskrivningen */
+.media-description {
+  flex: 1;
+}
+
+
+
+/* Stilar för formuläret */
+/* Sätter maxbredd på formuläret till 600px /
+/ Centrerar formuläret horisontellt /
+/ Lägger till marginaler på 2rem /
+/ Lägger till padding på 1rem /
+/ Sätter bakgrundsfärg till vit /
+/ Lägger till rundade hörn /
+/ Lägger till skugga */
+.contact {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Stilar för rubriken i formuläret */
+/* Sätter storlek på rubriken till 2rem /
+/ Lägger till nedre marginal på 1rem */
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Stilar för etiketterna i formuläret */
+/* Sätter display till block /
+/ Lägger till nedre marginal på 0.5rem */
+.contact label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Stilar för inputfälten i formuläret */
+/* Sätter bredd på inputfälten till 100% /
+/ Lägger till padding på 0.5rem /
+/ Lägger till gräns på 1px /
+/ Lägger till rundade hörn /
+/ Lägger till nedre marginal på 1rem */
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+/* Stilar för textområdet i formuläret */
+/* Sätter höjd på textområdet till 120px */
+.contact textarea {
+  height: 120px;
+}
+
+/* Stilar för knappen i formuläret /
+/ Sätter bakgrundsfärg till grå /
+/ Lägger till padding på 0.5rem 1rem /
+/ Lägger till gräns på 1px /
+/ Lägger till rundade hörn /
+/ Lägger till cursor på pointer */
+.contact input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Stilar för hover-effekten på knappen i formuläret /
+/ Sätter bakgrundsfärg till mörkgrå */
+.contact input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Stilar för iframe-elementet /
+/ Sätter bredd och höjd till 100% */
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Media query för dator skärmar */
+/* Sätter bredd och höjd till 560px och 315px för iframe-elementet */
+@media (min-width: 585px) {
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+/* Stilar för bild referenser */
+.image-credit {
+  font-size: 12px;
+  color: rgb(59, 59, 59);
+  margin-top: 5px;
+}
+
+/* Stilar för text referenser */
+.text-credit {
+  font-size: 12px;
+  color: rgb(59, 59, 59);
+  margin-top: 5px;
+}
+
+/* Stilar för datum från artikel */
+.datum-artikel {
+  font-size: 12px;
+  color: rgb(59, 59, 59);
+  margin-top: 5px;
+}
+
+/* Länkfärger för länkarna till 3D design från Multimedia sektionen*/
+.link-color {
+  color: #0077cc;
+  /* Standard länkfärg */
+  text-decoration: underline;
+  /* Understrykning av länkar */
+}
+
+/* Färg på besökta länkar till 3D design från Multimedia sektionen*/
+.link-color:visited {
+  color: #663399;
+  /* Violet färg på besökta länkar */
+}
+
+/* Media queries för mindre skärmar */
+@media only screen and (max-width: 600px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile img {
+    order: -1;
+    margin-bottom: 1rem;
+    max-width: 50%;
+  }
+
+  .profile-description {
+    order: 1;
+  }
+
+  .tutorials {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tutorials img {
+    order: -1;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+
+  .tutorials-description {
+    order: 1;
+  }
+
+  .diy {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .diy img {
+    order: -1;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    
+  }
+
+  .diy-description {
+    order: 1;
+  }
+
+  .news {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news img {
+    order: -1;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .news-description {
+    order: 1;
+  }
+
+  .media {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .media img {
+    order: -1;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .media-description {
+    order: 1;
+  }
+}
+
+
+/* Den här CSS har varit validerat på https://jigsaw.w3.org/css-validator/ och ändrat för att vara godkänt med WAVE */

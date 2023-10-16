@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport meta tag för responsivitet -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Titel för webbplatsen -->
+  <title>3D Zone - Multimedia</title>
+  <!-- Länk till CSS-fil -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Banner sektion -->
+  <section class="banner">
+    <!-- Banner med länk till hemsidan -->
+    <a href="index.html">
+      <h1>3D Zone</h1>
+    </a>
+  </section>
+
+  <!-- Navigation sektion -->
+  <div class="container">
+    <!-- Navigeringsmeny -->
+    <nav class="menu">
+      <ul>
+        <!-- Länkar till webbplatsens andra sidor-->
+        <li><a href="About.html">Om mig</a></li>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="Tutorials.html">Tutorials</a></li>
+        <li><a href="DIY.html">DIY</a></li>
+        <li><a href="News.html">Nyheter</a></li>
+        <li><a href="Media.html">Multimedia</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Main sektion-->
+  <main>
+    <!-- section elementet används för att gruppera sammanhörande innehåll tillsammans. t-->
+    <section class="multimedia">
+      <!-- Rubrik för huvudinnehållet -->
+      <h2>Multimedia</h2>
+      <!-- div elementet används för att gruppera sammanhörande innehåll tillsammans. -->
+      <div class="media">
+        <!-- Representativ bild för rubriken-->
+        <!-- img elementet används för att lägga till bilder på webbplatsen, alt elementet används för att beskriva bilden i en skärmläsare. -->
+        <img id="media-img1" src="img/media.jpg"  alt="3D-printad multimedia bild">
+        <div class="media-description">
+          <p>Välkommen till vår multimedia-sida där du kan upptäcka fantastiska bilder och videor som visar vad som är
+            möjligt med 3D-printing. Här kan du också hitta inspiration för dina egna projekt och få tips och råd från
+            andra entusiaster.</p>
+          <!-- Bildkredit -->
+          <p class="image-credit"><a
+              href="https://www.freepik.com/free-vector/content-creator-editing-video-footage-studio-editor-publishing-viral-video-social-media-multimedia-production-flat-vector-illustration-motion-design-concept-banner-landing-web-page_22343631.htm#query=multimedia&position=2&from_view=search&track=sph">Image
+              by pch.vector</a> on Freepik</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!-- Underordnad rubrik för innehåll -->
+      <h3>3D-printade objekt</h3>
+      <!-- div elementet används med class "media" för att syla i CSS-->
+      <div class="media">
+        <!-- img elementet används för att lägga till bilder på webbpatsen, alt elementet används för att beskriva bilden i en skärmläsare. -->
+        <img id="media-img2" src="img/media_bild/bency.jpg" alt="3D-printad bency">
+        <div class="media-description">
+          <p>Bency är en av de mest kända 3D-utskrifterna i världen och används ofta för att testa en 3D-skrivares
+            prestanda. Genom att skriva ut Bency kan användaren testa olika funktioner på sin 3D-skrivare.</p>
+          <a class="link-color" href="https://www.printables.com/model/3111-3d-benchy-handles-5-colors">Länk till 3D
+            design.</a>
+        </div>
+      </div>
+
+      <div class="media">
+        <img id="media-img3" src="img/media_bild/box.jpg" alt="3D-printade boxhandskar">
+        <div class="media-description">
+          <p>3D-printade boxhandskar.</p>
+          <a class="link-color" href="https://www.thingiverse.com/thing:3469545">Länk till 3D design.</a>
+        </div>
+      </div>
+      <!-- div elementet används med class "video-container" för att syla i CSS-->
+      <!-- På den här video som är inbäddad från youtube, när jag WAVE testar sida, får en varning för att addera synkroniserad bildtext,
+men själva videon har intgen talat innehåll -->
+      <div class="video-container">
+        <!-- iframe elementet används för att lägga till videor på webbplatsen, title elementet används för att beskriva videon i en skärmläsare. 
+          Konden är klippt från youtube för att kunna användas med HTML -->
+        <iframe src="https://www.youtube.com/embed/ZGwOoPbuoDk"
+          title="YouTube video player with Timelapse 3D printing box gloves"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen aria-hidden="true"></iframe>
+      </div>
+
+      <div class="media">
+        <img id="media-img4" src="img/media_bild/bulldozer1.jpg" alt="3D-printad bulldozer1">
+        <img id="media-img5" src="img/media_bild/bulldozer2.jpg" alt="3D-printad bulldozer2">
+        <div class="media-description">
+          <p>3D-printade bulldozer.</p>
+          <a class="link-color" href="https://www.thingiverse.com/thing:2649487">Länk till 3D design.</a>
+        </div>
+      </div>
+      <!-- På den här video som är inbäddad från youtube, när jag WAVE testar sida, får en varning för att addera synkroniserad bildtext,
+men själva videon har intgen talat innehåll -->
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/0cdkuCG26Z8"
+          title="YouTube video player with Timelapse 3D printing Bulldozer"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen aria-hidden="true"></iframe>
+      </div>
+
+      <div class="media">
+        <img id="media-img6" src="img/media_bild/groot1.jpg" alt="3D-printad Groot1">
+        <img id="media-img7" src="img/media_bild/groot2.jpg" alt="3D-printad Groot2">
+        <div class="media-description">
+          <p>3D-printade Groot.</p>
+          <a class="link-color" href="https://www.printables.com/model/41489-baby-groot">Länk till 3D design.</a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <!-- Footer sektion -->
+  <div class="container">
+    <footer>
+      <!-- Copyright notis -->
+      <p>&copy; 2023 3D Zone. Alla rättigheter förbehållna.</p>
+      <!-- Navigeringsmeny för footer sektionen -->
+      <nav class="footer-nav">
+        <ul>
+          <!-- Länkar till webbplatsens andra sidor-->
+          <li><a href="Contact.html">Kontakt</a></li>
+          <li><a href="TermsOfUse.html">Användarvillkor</a></li>
+          <li><a href="PrivacyPolicy.html">Sekretesspolicy</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport meta tag för responsivitet -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Titel för webbplatsen -->
+  <title>Kontakter - 3D Zone</title>
+  <!-- Länk till CSS-fil -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Banner sektion -->
+  <section class="banner">
+    <!-- Banner med länk till hemsidan -->
+    <a href="index.html">
+      <h1>3D Zone</h1>
+    </a>
+  </section>
+
+  <!-- Navigation sektion -->
+  <div class="container">
+    <!-- Navigeringsmeny -->
+    <nav class="menu">
+      <ul>
+        <!-- Länkar till webbplatsens andra sidor-->
+        <li><a href="About.html">Om mig</a></li>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="Tutorials.html">Tutorials</a></li>
+        <li><a href="DIY.html">DIY</a></li>
+        <li><a href="News.html">Nyheter</a></li>
+        <li><a href="Media.html">Multimedia</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Main sektion-->
+  <main>
+    <section class="kontakter">
+      <!-- Rubrik för huvudinnehållet -->
+      <h2>Kontakter</h2>
+      <!-- Paragraf med kontaktuppgifter -->
+      <p>Här hittar du våra kontaktuppgifter om du vill komma i kontakt med oss på 3D Zone. Tveka inte att höra av dig
+        om du har frågor, synpunkter eller bara vill säga hej!</p>
+      <!-- Kontaktuppgifter -->
+      <ul>
+        <li>E-post: alecio-2@student.ltu.se</li>
+        <li>Telefon: 076 ** ** ***</li>
+        <li>Adress: 3D Zone AB, Fiktivgatan 123, 141 47 Stockholm</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Kontaktformulär -->
+  <section class="contact">
+    <!-- Rubrik för kontaktformuläret -->
+    <h2>Kontakt</h2>
+    <!-- Kontaktformulär som skickar informationen till Confirmation.php med metoden post -->
+    <form action="Confirmation.php" method="post">
+      <!-- Label för namn -->
+      <!-- Label kopplar ihop med inputfältet med samma id -->
+      <label for="name">Namn:</label><!-- Namn -->
+      <!-- Inputfält för namn -->
+      <!-- required gör så att fältet måste fyllas i -->
+      <!-- id och name är samma för att kunna koppla ihop label och input -->
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-post:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Ämne:</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="message">Meddelande:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <input type="submit" value="Skicka">
+    </form>
+  </section>
+
+  <!-- Footer sektion -->
+  <div class="container">
+    <footer>
+      <!-- Copyright notis -->
+      <p>&copy; 2023 3D Zone. Alla rättigheter förbehållna.</p>
+      <!-- Navigeringsmeny för footer sektionen -->
+      <nav class="footer-nav">
+        <ul>
+          <!-- Länkar till webbplatsens andra sidor-->
+          <li><a href="Contact.html">Kontakt</a></li>
+          <li><a href="TermsOfUse.html">Användarvillkor</a></li>
+          <li><a href="PrivacyPolicy.html">Sekretesspolicy</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+</body>
+
+</html>
